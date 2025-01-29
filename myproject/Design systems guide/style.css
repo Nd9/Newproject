@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+/* Sections Styling */
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Colors Section */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.color-box {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.2),
+        inset 0 -5px 10px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.color-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 
+        0 15px 25px rgba(0, 0, 0, 0.3),
+        inset 0 -5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.color-box:hover::before {
+    opacity: 1;
+}
+
+.color-box strong {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.color-box span {
+    font-size: 0.8rem;
+    display: block;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Font Styles Section */
+.font-showcase {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.font-showcase:hover {
+    background-color: #f7f7f7;
+}
+
+/* Text Styles Section */
+.text-style-example {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.text-style-example:hover {
+    background-color: #f0f0f0;
+}
+
+/* Web Design Methods Section */
+#web-design-methods {
+    background-color: #f9f9f9;
+}
+
+.design-story {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.design-story h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.code-narrative, 
+.css-magic, 
+.design-principles, 
+.responsive-design {
+    background-color: #fff;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.design-story ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.design-story code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+.design-story pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #e74c3c;
+    padding-left: 1rem;
+    color: #7f8c8d;
+    margin: 1rem 0;
+}

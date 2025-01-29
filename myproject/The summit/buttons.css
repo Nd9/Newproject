@@ -1,0 +1,88 @@
+a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .nav-link {
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    color: #5495ff; /* Lighter blue color */
+  }
+  
+  .btn {
+    background: linear-gradient(145deg, #2176FF, #1A5FCC); /* Added gradient for depth */
+    border-radius: 5px; /* Slightly more rounded corners */
+    color: #ffffff; /* White text */
+    font-family: 'Raleway', sans-serif; /* Use Raleway font */
+    font-size: 16px; /* Font size */
+    font-weight: 400; /* Normal font weight */
+    padding: 14px 28px; /* Increased horizontal padding for a more substantial feel */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.3), /* Outer shadow for depth */
+        inset 2px 2px 5px rgba(255, 255, 255, 0.2); /* Inner highlight for raised effect */
+    border: none; /* Remove default border */
+    transition: 
+        background 0.3s ease, 
+        box-shadow 0.3s ease, 
+        transform 0.1s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(145deg, #1A5FCC, #2176FF); /* Gradient inversion on hover */
+    box-shadow: 
+        3px 3px 10px rgba(0, 0, 0, 0.2), /* Softer shadow on hover */
+        inset 1px 1px 3px rgba(255, 255, 255, 0.2); /* Reduced inner highlight */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  .btn:active {
+    background: linear-gradient(145deg, #1A4EB8, #1957A4); /* Darker gradient on active */
+    box-shadow: 
+        1px 1px 5px rgba(0, 0, 0, 0.1), /* Minimal shadow on active */
+        inset 2px 2px 5px rgba(255, 255, 255, 0.2); /* Maintained inner highlight */
+    transform: translateY(0px) scale(0.98); /* Pressed-down effect */
+  }
+  .activity {
+    background: linear-gradient(145deg, #2176FF, #f0f0f0); /* Light gradient for a tactile feel */
+    border: 2px solid #2176FF; /* Enhanced blue border */
+    border-radius: 5px; /* Rounded corners */
+    color: #2176FF; /* Blue text */
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 24px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 
+        3px 3px 10px rgba(0, 0, 0, 0.2), /* Outer shadow */
+        inset 1px 1px 3px rgba(255, 255, 255, 0.6); /* Inner highlight */
+    transition: 
+        background 0.3s ease, 
+        box-shadow 0.3s ease, 
+        transform 0.1s ease-in-out;
+  }
+  .activity:hover {
+    background: linear-gradient(145deg, #f0f0f0, #2176FF); /* Gradient inversion on hover */
+    box-shadow: 
+        2px 2px 8px rgba(0, 0, 0, 0.15), 
+        inset 1px 1px 3px rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
+  }
+  .activity:active {
+    background: linear-gradient(145deg, #e0e0e0, #d0d0d0); /* Darker gradient on active */
+    box-shadow: 
+        1px 1px 5px rgba(0, 0, 0, 0.1), 
+        inset 1px 1px 3px rgba(255, 255, 255, 0.6);
+    transform: translateY(0px) scale(0.97);
+    color: #1A4EB8;
+  }
+  
+  
+  
+  
+  
